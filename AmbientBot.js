@@ -121,7 +121,7 @@
                 ambient.room.messages = room.messages;
                 ambient.room.queue = room.queue;
                 ambient.room.newBlacklisted = room.newBlacklisted;
-                ambient.settings.monies = nmonies;
+                //ambient.settings.monies = nmonies;
                 API.chatLog(ambient.chat.datarestored);
             }
         }
@@ -184,7 +184,7 @@
     var botCreatorIDs = ["3995934", "4105209"];
 
     var ambient = {
-        version: "1.0.4",
+        version: "1.0.5",
         status: false,
         name: "@bassmusicnetwork.com",
         loggedInID: null,
