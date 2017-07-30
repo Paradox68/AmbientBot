@@ -184,7 +184,7 @@
     var botCreatorIDs = ["3995934", "4105209"];
 
     var ambient = {
-        version: "1.0.2",
+        version: "1.0.3",
         status: false,
         name: "@bassmusicnetwork.com",
         loggedInID: null,
