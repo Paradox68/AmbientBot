@@ -121,7 +121,7 @@
                 ambient.room.messages = room.messages;
                 ambient.room.queue = room.queue;
                 ambient.room.newBlacklisted = room.newBlacklisted;
-                //ambient.settings.monies = nmonies;
+                //fuck you github UPDATE ALREADY/ambient.settings.monies = nmonies;
                 API.chatLog(ambient.chat.datarestored);
             }
         }
