@@ -105,7 +105,7 @@
         else {
             var settings = JSON.parse(localStorage.getItem("ambientsettings"));
             var room = JSON.parse(localStorage.getItem("ambientRoom"));
-            var nmonies = JSON.parse(localStorage.getItem("monies"));
+            //var nmonies = JSON.parse(localStorage.getItem("monies"));
             var elapsed = Date.now() - JSON.parse(info).time;
             if ((elapsed < 1 * 60 * 60 * 1000)) {
                 API.chatLog(ambient.chat.retrievingdata);
