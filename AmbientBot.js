@@ -57,7 +57,7 @@
         if (!cb) cb = function () {
         };
 
-        $.get("https://rawgit.com/uhlowa/AmbientBot/master/lang/langIndex.json", function (json) {
+        $.get("https://rawgit.com/Paradox68/AmbientBot/master/lang/langIndex.json", function (json) {
             var link = ambient.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -188,9 +188,9 @@
         status: false,
         name: "@bassmusicnetwork.com",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/uhlowa/AmbientBot/master/AmbientBot.js",
+        scriptLink: "https://rawgit.com/Paradox68/AmbientBot/master/AmbientBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/uhlowa/AmbientBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/Paradox68/AmbientBot/master/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -199,7 +199,7 @@
             botName: "Bass Music Network Bot",
             monies: [" ", " "],
             language: "english",
-            chatLink: "https://rawgit.com/uhlowa/AmbientBot/master/lang/en.json",
+            chatLink: "https://rawgit.com/Paradox68/AmbientBot/master/lang/en.json",
             startupCap: 1, // 1-200
             spotLock: "none",
             approvedDJ: "[None]",
@@ -253,8 +253,8 @@
             songstats: false,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://rawgit.com/uhlowa/AmbientBot/master/nsfw.json",
-                OP: "https://rawgit.com/uhlowa/AmbientBot/master/op.json"
+                NSFW: "https://rawgit.com/Paradox68/AmbientBot/master/nsfw.json",
+                OP: "https://rawgit.com/Paradox68/AmbientBot/master/op.json"
             }
         },
         room: {
@@ -2031,7 +2031,7 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!ambient.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        API.sendChat('/me A list of all available commands can be found here: https://github.com/uhlowa/AmbientBot/blob/master/commands.md');
+                        API.sendChat('/me A list of all available commands can be found here: https://github.com/Paradox68/AmbientBot/blob/master/commands.md');
                     }
                 }
             },
@@ -2420,7 +2420,7 @@
                     if (!ambient.commands.executable(this.rank, chat)) return void (0);
                     else {
                         var link = "(Updated link coming soon)";
-                        API.sendChat('Click the bar at bottom to create a playlist and pull songs from the Youtube search bar it is all pretty self explanatory. When you have a song(s) on your playlist, Click to DJ and you will be put in line to play the first song on your selected playlist. Commands for the bot are all listed here: https://github.com/uhlowa/AmbientBot/blob/master/commands.md');
+                        API.sendChat('Click the bar at bottom to create a playlist and pull songs from the Youtube search bar it is all pretty self explanatory. When you have a song(s) on your playlist, Click to DJ and you will be put in line to play the first song on your selected playlist. Commands for the bot are all listed here: https://github.com/Paradox68/AmbientBot/blob/master/commands.md');
                     }
                 }
             },
@@ -2594,7 +2594,7 @@
                         if (msg.length <= cmd.length + 1) return API.sendChat(subChat(ambient.chat.currentlang, {language: ambient.settings.language}));
                         var argument = msg.substring(cmd.length + 1);
 
-                        $.get("https://rawgit.com/uhlowa/AmbientBot/master/lang/langIndex.json", function (json) {
+                        $.get("https://rawgit.com/Paradox68/AmbientBot/master/lang/langIndex.json", function (json) {
                             var langIndex = json;
                             var link = langIndex[argument.toLowerCase()];
                             if (typeof link === "undefined") {
@@ -3706,7 +3706,7 @@
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) { return void (0); }
-                    API.sendChat(subChat('The open source code for ' + ambient.settings.botName +  'is available at: https://github.com/uhlowa/AmbientBot'));
+                    API.sendChat(subChat('The open source code for ' + ambient.settings.botName +  'is available at: https://github.com/Paradox68/AmbientBot'));
                         }
                 },
                 dance6Command: {
