@@ -251,7 +251,7 @@
             intervalMessages: [],
             messageInterval: 5,
             songstats: false,
-            commandLiteral: "$",
+            commandLiteral: "!",
             blacklists: {
                 NSFW: "https://rawgit.com/uhlowa/AmbientBot/master/nsfw.json",
                 OP: "https://rawgit.com/uhlowa/AmbientBot/master/op.json"
